@@ -1,0 +1,297 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, rgba(120, 208, 244, 0.5), rgba(238, 92, 132, 0.5), rgba(255, 221, 113, 0.5));
+    overflow-x: hidden;
+    mix-blend-mode: luminosity;
+}
+
+.h1{
+
+    font-family: Quicksand;
+    font-size: 94px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 96px; /* 102.128% */
+    letter-spacing: -3.76px;
+
+}
+
+.h3{
+    font-family: Quicksand;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px; /* 188.889% */
+}
+
+#sign-in-button{
+
+    flex-shrink: 0;
+    align-items: right;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 14px;
+    width: 100%;
+    margin: 0 auto;
+    mix-blend-mode: luminosity;
+    padding: 7px;
+    height: 70px;
+    box-sizing: border-box;
+}
+
+.main-title{
+
+    width: 631px;
+    height: 306px;
+    mix-blend-mode: luminosity;
+    color: #393939;
+    font-size: 94px;
+    font-style: normal;
+    font-family: Quicksand;
+    font-weight: 600;
+    line-height: 96px;
+    letter-spacing: -3.76px;
+    word-wrap: break-word;
+    flex-shrink: 0;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: left;
+    margin: 20px, 0;
+    
+}
+
+#logo-container img {
+    height: 100%; /* Matches the height of the header */
+    max-height: 150px; /* Ensures the logo does not exceed the header height */
+    width: auto; /* Maintains aspect ratio */
+    object-fit: cover; /* Ensures the image fits within the specified dimensions */
+    padding-left: 128px;
+    padding-top: 8px;
+
+}
+
+nav ul {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    gap: 50px;
+    list-style: none;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 0;
+}
+
+nav ul li a {
+    justify-content: center;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    gap: 50px;
+    color: #393939;
+}
+
+nav ul li a.sign-in:hover {
+    background-color: #f49bc8;
+}
+
+nav ul li a.sign-in {
+    padding: 10px 20px;
+    background-color: #ff89e2;
+    border-radius: 20px;
+    color: white;
+}
+
+#go-back-button{
+    
+    flex-direction: row;
+    flex-direction: column;
+    margin-top: 250px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+}
+
+.zero{ 
+
+    height: calc(100vh - 50px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    padding: 0 141px;
+    margin-top: 0px;
+
+}
+
+.zero .content {
+    max-width: 600px;
+    color: var(--Headlines, #393939);
+
+}
+
+.zero .main-title {
+    font-size: 87px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.zero .subtitle {
+    width: 503px;
+    height: 100px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #666;
+    margin-bottom: auto;
+    line-height: 34px;
+    flex-shrink: 0;
+    z-index: -2;
+}
+
+.zero .buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.zero .buttons a {
+    padding: 10px 40px;
+    background-color: #ff89e2;
+    border-radius: 100px;
+    margin-top: 30px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    display: flex;
+}
+
+.zero .buttons a:hover{
+    background-color: #f49bc8;
+}
+
+.hero {
+    height: calc(100vh - 50px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    padding: 0 180px;
+    margin-top: -20px;
+}
+
+.hero .content {
+    max-width: 600px;
+    color: var(--Headlines, #393939);
+
+}
+
+.hero .main-title {
+    font-size: 100px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.hero .subtitle {
+    width: 503px;
+    height: 100px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #272727;
+    margin-bottom: auto;
+    line-height: 34px;
+    flex-shrink: 0;
+    z-index: -1;
+}
+
+.hero .buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.hero .buttons a {
+    padding: 10px 40px;
+    background-color: #ff89e2;
+    border-radius: 100px;
+    margin-top: 30px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    display: flex;
+    box-shadow: #272727;
+}
+
+.hero .buttons a:hover{
+    background-color: #f49bc8;
+}
+
+.imagedesktopgraph{
+    position: fixed; /* Fix the container to the viewport */
+    right: -20px; /* Align to the right */
+    top: -50px; /* Align to the top */
+    display: flex;
+    justify-content:flex-end; /* Align the image to the right */
+    align-items: start; /* Align the image to the top */
+    width: auto;
+    height: 100%;
+    padding-right: 150px;
+    transform: translateY(20%);
+    object-fit: cover;
+    mix-blend-mode: normal;
+    z-index: -1;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+.form-container {
+    mix-blend-mode: luminosity;
+    color: #393939; /* Match text color */
+    border: 0px solid #ff89e2; /* Match button border color */
+    padding: 20px;
+    position: relative;
+}
+.form-container input {
+    border: 1px solid #ff89e2; /* Match button border color */
+    background-color: rgba(238, 92, 132, 0.5); /* Match gradient background */
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.form-container button {
+    padding: 10px;
+    width: 100%;
+    background-color: #ff89e2; /* Match button background color */
+    color: white; /* Match button text color */
+    border: none;
+    cursor: pointer;
+}
+.form-container button:hover {
+    background-color: #f49bc8; /* Match button hover effect */
+}
+.back-arrow {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #ff89e2; /* Match button color */
+}
