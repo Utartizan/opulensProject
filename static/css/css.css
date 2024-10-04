@@ -288,6 +288,7 @@ nav ul li a.sign-in {
     border: none;
     cursor: pointer;
     margin-top: 10px;
+    font-family: 'Quicksand', sans-serif;
 }
 .form-container button:hover {
     background-color: #f49bc8; /* Match button hover effect */
