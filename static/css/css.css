@@ -1,10 +1,26 @@
-body {
-    font-family: 'Quicksand', sans-serif;
+html, body{
+
     margin: 0;
     padding: 0;
+    height: 100vh;
+    
+}
+
+
+.body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background: linear-gradient(135deg, rgba(120, 208, 244, 0.5), rgba(238, 92, 132, 0.5), rgba(255, 221, 113, 0.5));
-    overflow-x: hidden;
-    mix-blend-mode: luminosity;
+    justify-content: center;
+    flex-direction: column;
+    z-index: -1;
 }
 
 .h1{
@@ -261,10 +277,16 @@ nav ul li a.sign-in {
     mix-blend-mode: luminosity;
     color: #393939; /* Match text color */
     border: 4px solid #814d733f; /* Match button border color */
-    padding: 20px;
+    padding: 40px;
     position: relative;
-    max-width: 500px;
+    max-width: 700px;
     margin: 50px auto;
+    box-shadow: 2px 8px 16px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+
+    width: 50%;
+    max-width: 1200px;
+    margin: 100px auto;
     box-shadow: 2px 8px 16px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     
@@ -278,6 +300,7 @@ nav ul li a.sign-in {
     width: 100%;
     box-sizing: border-box;
     font-family: 'Quicksand', sans-serif;
+    padding-bottom: 10px;
 }
 .form-container button {
     padding: 10px;
@@ -300,4 +323,50 @@ nav ul li a.sign-in {
     cursor: pointer;
     text-decoration: none;
     color: #ff89e2; /* Match button color */
+}
+
+.footer{
+
+    background-color: rgba(255, 255, 255, 0.8);
+    border-top: 4px solid rgba(129, 77, 155, 0.369);
+    padding: 20px;
+    position: relative;
+    height: 90px;
+    margin: 0 auto;
+    box-shadow: 2px -2px 16px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 85%;
+    max-width: 1200px;
+    margin: 100px auto;
+    box-shadow: 2px 8px 16px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.footer-content {
+
+    text-align: center;
+    color: #393939;
+
+}
+
+
+.footer-links{
+
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+
+}
+
+.footer-links a{
+
+    color: #393939;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover{
+
+    text-decoration: underline; 
+
 }
