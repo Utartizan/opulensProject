@@ -49,7 +49,7 @@ def login(request):
             if check_password(password, user.password):  # Compare the entered password with the stored hashed password
                 print('Login successful!')
                 request.session['user_id'] = user.id  # Save user ID in session
-                return render(request, '/dashboard')  # Redirect to the dashboard
+                return redirect('dashboard')  # Redirect to the dashboard
             else:
                 print('Password is incorrect!')  # Password mismatch
         else:
@@ -67,9 +67,6 @@ def reportsinsights(request):
 
 def dashboard(request):
     return render(request, 'dashboard.html')
-
-def login(request):
-    return render(request, 'login.html')
 
 def userinput(request):
     return render(request, 'userinput.html')
