@@ -267,9 +267,7 @@ nav ul li a.sign-in {
     padding-right: 150px;
     transform: translateY(20%);
     object-fit: cover;
-    mix-blend-mode: normal;
-    z-index: -1;
-    overflow: hidden;
+    z-index: -4;
     justify-content: space-between;
 }
 
