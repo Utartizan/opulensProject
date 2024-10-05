@@ -64,7 +64,7 @@
 
                 $.ajax({
                     type: 'POST',
-                    url: '{% url "budgetracking" %}',  // Django URL to handle the form submission
+                    url: '{% url "budgetTracking" %}',  // Django URL to handle the form submission
                     data: $(this).serialize(),  // Serialize the form data
                     success: function (response) {
                         if (response.success) {

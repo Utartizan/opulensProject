@@ -13,6 +13,7 @@ urlpatterns = [
     path('userinput/', views.userinput, name='userinput'),
     path('datavisualisation/', views.datavisualisation, name='datavisualisation'),
     path('budgetracking/', views.budgetracking, name='budgetracking'),
+    path('budgetTracking/', views.budgetTracking, name='budgetTracking'),
     path('dashboard/', views.dashboard, name='dashboard'),
     path('privacy/', views.privacy, name='privacy'),
     path('terms/', views.terms, name='terms'),

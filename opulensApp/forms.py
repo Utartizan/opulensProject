@@ -1,5 +1,5 @@
 from django import forms # type: ignore
-from django.db import models
+from django.db import models # type: ignore
 
 class RegisterForm(forms.Form):
     username = forms.CharField(max_length=101)
