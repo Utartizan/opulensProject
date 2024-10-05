@@ -368,3 +368,79 @@ nav ul li a.sign-in {
     text-decoration: underline; 
 
 }
+
+.budget-form-container{
+
+    background-color: #fff;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    
+}
+
+.budget-form-container h2{
+    font-size: 24px;
+    font-weight: 600px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.budget-form-container label{
+    font-size: 16px;
+    font-weight: 500px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.budget-form-container input[type="text"],
+.budget-form-container input[type="number"],
+.budget-form-container input[type="date"] {
+
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #fafafa;
+
+}
+
+.budget-form-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.budget-form-container button:hover {
+    background-color: #555;
+}
+
+#successMessage, #errorMessage {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    .budget-form-container {
+        padding: 20px;
+    }
+    
+    .budget-form-container h2 {
+        font-size: 20px;
+    }
+
+    .budget-form-container input,
+    .budget-form-container button {
+        font-size: 14px;
+    }
+}
