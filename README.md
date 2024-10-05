@@ -46,4 +46,4 @@ Critical: A debt-to-income ratio over 50% signals high financial risk. Immediate
 Opulens was developed using PostgreSQL for data storage and Tableau for powerful data visualisation. The app's user interface is designed for ease of use, allowing you to gain insights into your finances without any technical knowledge.
 
 ## Data Security:
-We take privacy seriously. All financial data is securely stored in a PostgreSQL database which is encrypted via SHA256, and visualisations are created without compromising your sensitive information. No personal data is shared with third parties.
+We take privacy seriously. All financial data is securely stored in a PostgreSQL database which is encrypted via SHA-256, and visualisations are created without compromising your sensitive information. No personal data is shared with third parties.
