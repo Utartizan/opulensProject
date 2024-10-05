@@ -26,6 +26,24 @@
             </ul>
         </nav>
     </header>
+    <body>
+        <div class="form-container">
+            <a href="/opulens" class="back-arrow">← Back</a>
+            <h2>Log in</h2>
+            <form method="post" action="/login/">  <!-- Ensure this points to your login URL -->
+                {% csrf_token %}
+                <div>
+                    <label for="username_or_email">Username or Email:</label>
+                    <input type="text" id="username_or_email" name="username_or_email" placeholder="Enter username or email" required>
+                </div>
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter password" required>
+                </div>
+                <button type="submit">Log in</button>
+            </form>
+            
+    </div>
         <div class="zero">
             <div class="buttons">
                 <a href="/opulens" id="go-back-button">Go Back.</a>

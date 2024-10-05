@@ -1,4 +1,4 @@
-from django import forms
+from django import forms # type: ignore
 
 class RegisterForm(forms.Form):
     username = forms.CharField(max_length=101)
@@ -15,3 +15,7 @@ class RegisterForm(forms.Form):
         if password != confirm_password:
             raise forms.ValidationError("Passwords do not match.")
         return cleaned_data
+
+class EmailOrUsernameLoginForm(forms.Form):
+    username_or_email = forms.CharField(max_length=101, label='Username or email')
+    password = forms.CharField(widget=forms.PasswordInput)
