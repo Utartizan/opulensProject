@@ -64,7 +64,7 @@
 
             $.ajax({
                 type: 'POST',
-                url: '{% url "add_budget_entry" %}',
+                url: '{% url "budgetracking" %}',
                 data: $(this).serialize(),
                 success: function(response) {
                     if (response.success) {
