@@ -77,10 +77,10 @@ WSGI_APPLICATION = 'opulensProject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'opulensDB',
+        'NAME': 'opulenspostgres',
         'USER': 'postgres',
-        'PASSWORD': 'v$.2EZ;`8*nK89Z4rq',
-        'HOST': 'localhost',
+        'PASSWORD': '2dcMwjSrXXRW7k5ah4',
+        'HOST': 'opulens-2.cxc4oasisody.eu-west-2.rds.amazonaws.com',
         'PORT': '5432',
     }
 }
