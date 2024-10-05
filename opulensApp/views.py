@@ -24,3 +24,24 @@ def register(request):
 
 def opulens(request):
     return render(request, 'opulens.html')  
+
+def reportsinsights(request):
+    return render(request, 'reportsinsights.html')
+
+def dashboard(request):
+    return render(request, 'dashboard.html')
+
+def login(request):
+    return render(request, 'login.html')
+
+def userinput(request):
+    return render(request, 'userinput.html')
+
+def datavisualisation(request): 
+    return render(request, 'datavisualisation.html')
+
+def signin(request):   
+    return render(request, 'signin.html')
+
+def budgetracking(request):
+    return render(request, 'budgetracking.html')
