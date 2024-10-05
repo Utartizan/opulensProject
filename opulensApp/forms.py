@@ -1,4 +1,5 @@
 from django import forms # type: ignore
+from django.db import models
 
 class RegisterForm(forms.Form):
     username = forms.CharField(max_length=101)
@@ -19,3 +20,12 @@ class RegisterForm(forms.Form):
 class EmailOrUsernameLoginForm(forms.Form):
     username_or_email = forms.CharField(max_length=101, label='Username or email')
     password = forms.CharField(widget=forms.PasswordInput)
+
+class BudgetEntryForm(forms.Form):
+    category = forms.CharField(max_length=100, label='Category')
+    amount = forms.DecimalField(max_digits=11, decimal_places=2, label='Amount')
+    description = forms.CharField(max_length=200, required=False, label='Description')
+    date = forms.DateField(widget=forms.SelectDateWidget(), label='Date')
+
+    def __str__(self):
+        return f"{self.category} - {self.amount} on {self.date}"

@@ -7,3 +7,13 @@ class UserAccount(models.Model):
 
     def __str__(self):
         return self.username
+
+
+class BudgetEntry(models.Model):
+    category = models.CharField(max_length=100)
+    amount = models.DecimalField(max_digits=10, decimal_places=2)
+    description = models.CharField(max_length=200, blank=True, null=True)
+    date = models.DateField()
+
+    def __str__(self):
+        return f"{self.category} - {self.amount} on {self.date}"

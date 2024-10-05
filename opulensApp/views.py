@@ -5,6 +5,11 @@ from .forms import RegisterForm
 from .models import UserAccount
 from .forms import EmailOrUsernameLoginForm # type: ignore
 from django.contrib.auth.hashers import check_password # type: ignore
+from django import forms
+from .forms import BudgetEntryForm
+from .models import BudgetEntry
+from django.http import JsonResponse
+
 
 def register(request):
     if request.method == 'POST':
@@ -59,6 +64,32 @@ def login(request):
         return render(request, 'login.html', {'error': 'Invalid username/email or password'})
 
     return render(request, 'login.html')  # Handle GET requests
+
+
+def budgetTracking(request):
+    if request.method == 'POST':
+        form = BudgetEntryForm(request.POST)
+        if form.is_valid():
+            # Process the form data
+            category = form.cleaned_data['category']
+            amount = form.cleaned_data['amount']
+            description = form.cleaned_data.get('description', '')  # Optional field
+            date = form.cleaned_data['date']
+
+            # Create a new BudgetEntry object and save it
+            budget_entry = BudgetEntry(category=category, amount=amount, description=description, date=date)
+            budget_entry.save()
+
+            # Return a JSON response indicating success
+            return JsonResponse({'success': True})
+        
+        # If the form is not valid, return an error response
+        return JsonResponse({'success': False, 'errors': form.errors})
+
+    return JsonResponse({'success': False, 'errors': 'Invalid request.'})  # Handle other methods
+
+
+
 def opulens(request):
     return render(request, 'opulens.html')  
 
