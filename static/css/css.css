@@ -430,7 +430,6 @@ nav ul li a.sign-in {
     margin-top: 10px;
 }
 
-/* Responsive Design */
 @media (max-width: 600px) {
     .budget-form-container {
         padding: 20px;
