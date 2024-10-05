@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect
+from django.contrib.auth.hashers import make_password
 from .forms import RegisterForm
 from .models import UserAccount
 
@@ -11,8 +12,10 @@ def register(request):
             email = form.cleaned_data['email']
             password = form.cleaned_data['password']
 
+            hashed_password = make_password(password)
+
             # Save to the database
-            user = UserAccount(username=username, email=email, password=password)
+            user = UserAccount(username=username, email=email, password=hashed_password)
             user.save()
 
             return redirect('opulens')  # Redirect after successful registration
@@ -45,3 +48,12 @@ def signin(request):
 
 def budgetracking(request):
     return render(request, 'budgetracking.html')
+
+def privacy(request):
+    return render(request, 'privacy.html')
+
+def terms(request):
+    return render(request, 'terms.html')
+
+def contact(request):
+    return render(request, 'contact.html')
