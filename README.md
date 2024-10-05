@@ -4,7 +4,7 @@ Opulens is designed to help you visualise and manage your finances effectively. 
 ## How to Install and Run Opulens:
 No installation required! Simply click on the link below to access the platform.
 
-[https://opulens.app]
+
 
 ## How to Use Opulens:
 Enter your monthly income (must be a non-negative value).
