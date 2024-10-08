@@ -35,7 +35,7 @@ Debt Repayment Progress: A visual tracker of your debt repayment schedule.
 
 Spending Trends: A time-series analysis that helps you monitor fluctuations in spending habits over time.
 
-##Interpretation of Results:
+## Interpretation of Results:
 Healthy Budget: If your savings rate is above 20% and your debt-to-income ratio is below 36%, your finances are on track.
 
 Warning: If your debt-to-income ratio is between 37-49% or your savings rate is below 10%, consider reducing expenses or increasing savings.
