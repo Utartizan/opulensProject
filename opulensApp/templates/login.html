@@ -30,7 +30,7 @@
         <div class="form-container">
             <a href="/opulens" class="back-arrow">← Back</a>
             <h2>Log in</h2>
-            <form method="post" action="/login/">  <!-- Ensure this points to your login URL -->
+            <form method="post" action="{% url 'login' %}">  <!-- Ensure this points to your login URL -->
                 {% csrf_token %}
                 <div>
                     <label for="username_or_email">Username or Email:</label>

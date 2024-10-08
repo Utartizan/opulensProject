@@ -9,6 +9,7 @@ from django import forms # type: ignore
 from .forms import BudgetEntryForm
 from .models import BudgetEntry
 from django.http import JsonResponse # type: ignore
+from django.contrib.auth.decorators import login_required
 
 
 def register(request):
@@ -96,21 +97,25 @@ def budgetTracking(request):
 def opulens(request):
     return render(request, 'opulens.html')  
 
+@login_required
 def reportsinsights(request):
     return render(request, 'reportsinsights.html')
 
+@login_required
 def dashboard(request):
     return render(request, 'dashboard.html')
 
 def userinput(request):
     return render(request, 'userinput.html')
 
+@login_required
 def datavisualisation(request): 
     return render(request, 'datavisualisation.html')
 
 def signin(request):   
     return render(request, 'signin.html')
 
+@login_required
 def budgetracking(request):
     return render(request, 'budgetracking.html')
 
