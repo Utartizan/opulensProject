@@ -99,6 +99,7 @@ nav ul {
     list-style: none;
     justify-content: center;
     margin: 0 auto;
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.608)
 }
 
 nav ul li {
@@ -121,12 +122,12 @@ nav ul li a {
 }
 
 nav ul li a.sign-in:hover {
-    background-color: #f49bc8;
+    background-color: #865fb9;
 }
 
 nav ul li a.sign-in {
     padding: 10px 20px;
-    background-color: #ff89e2;
+    background-color: #b872f6;
     border-radius: 20px;
     color: white;
 }
@@ -219,6 +220,7 @@ nav ul li a.sign-in {
     color: #dbdbdb;
     margin-bottom: 30px;
     mix-blend-mode: luminosity;
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.288)
 }
 
 .hero .subtitle {
@@ -232,6 +234,7 @@ nav ul li a.sign-in {
     line-height: 34px;
     flex-shrink: 0;
     z-index: -1;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.785);
 }
 
 .hero .buttons {
@@ -241,7 +244,7 @@ nav ul li a.sign-in {
 
 .hero .buttons a {
     padding: 10px 40px;
-    background-color: #ff89e2;
+    background-color: #b872f6;
     border-radius: 100px;
     margin-top: 30px;
     color: white;
@@ -249,10 +252,11 @@ nav ul li a.sign-in {
     font-weight: 700;
     display: flex;
     box-shadow: #272727;
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.278)
 }
 
 .hero .buttons a:hover{
-    background-color: #f49bc8;
+    background-color: #865fb9;
 }
 
 .form-container {
