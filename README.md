@@ -1,3 +1,6 @@
+# This Project has come to a halt due to rising costs in fees. Will return and have this finished once we are ready.
+
+
 # Welcome to Opulens - Your Financial Budgeting Companion!
 Opulens is designed to help you visualise and manage your finances effectively. Using advanced PostgreSQL databases and Tableau, the app turns your financial data into insightful visualisations to support better budgeting decisions.
 
