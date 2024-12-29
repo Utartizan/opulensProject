@@ -4,10 +4,6 @@
 # Welcome to Opulens - Your Financial Budgeting Companion!
 Opulens is designed to help you visualise and manage your finances effectively. Using advanced PostgreSQL databases and Tableau, the app turns your financial data into insightful visualisations to support better budgeting decisions.
 
-## How to Install and Run Opulens:
-No installation required! Simply click on the link below to access the platform.
-
-
 
 ## How to Use Opulens:
 Enter your monthly income (must be a non-negative value).
